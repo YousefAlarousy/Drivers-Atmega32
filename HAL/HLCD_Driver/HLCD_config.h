@@ -4,7 +4,7 @@
 /************* Author : YousefAlarousy ****************/
 /************* Layer  : HAL            ****************/
 /************* Module : LCD            ****************/
-/************* VISION : 1.00           ****************/
+/************* Version : 1.00          ****************/
 /************* Date   : 3/8/2023       ****************/
 /******************************************************/
 /******************************************************/
@@ -12,13 +12,41 @@
 
 #ifndef HLCD_CONFIG_H_
 #define HLCD_CONFIG_H_
+/*********************************************************************************************************************/
+/*Choose LCD Data Port :
+ 	 	 	 	 	 	 _DIO_PORTA
+ 	 	 	 	 	 	 _DIO_PORTB
+ 	 	 	 	 	 	 _DIO_PORTC
+ 	 	 	 	 	 	 _DIO_PORTD
+ */
 
 #define HLCD_DATA_PORT          DIO_PORTC
 
-#define HLCD_CONTROL_PORT       DIO_PORTA
-#define HLCD_RS_PIN                 0
-#define HLCD_RW_PIN		            1
-#define HLCD_EN_PIN		            2
+/*********************************************************************************************************************/
+/*Choose LCD Control Port :
+ 	 	 	 	 	 	 _DIO_PORTA
+ 	 	 	 	 	 	 _DIO_PORTB
+ 	 	 	 	 	 	 _DIO_PORTC
+ 	 	 	 	 	 	 _DIO_PORTD
+ */
+#define HLCD_CONTROL_PORT       DIO_PORTD
+
+/*********************************************************************************************************************/
+/*Choose LCD Control Pins :
+ 	 	 	 	 	 	 _DIO_PIN0
+ 	 	 	 	 	 	 _DIO_PIN1
+ 	 	 	 	 	 	 _DIO_PIN2
+ 	 	 	 	 	 	 _DIO_PIN3
+ 	 	 	 	 	 	 _DIO_PIN4
+ 	 	 	 	 	 	 _DIO_PIN5
+ 	 	 	 	 	 	 _DIO_PIN6
+ 	 	 	 	 	 	 _DIO_PIN7
+ */
+#define HLCD_RS_PIN                 DIO_PIN0
+#define HLCD_RW_PIN		            DIO_PIN1
+#define HLCD_EN_PIN		            DIO_PIN2
+
+/*********************************************************************************************************************/
 
 
 #endif
